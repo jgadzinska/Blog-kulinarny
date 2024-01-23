@@ -36,15 +36,39 @@ header {
     background-color: rgb(29,34,40);
     color: white;
 }
-.iconsSocial {
+.flex {
     display: flex;
     align-items: center;
 }
 .topnav .container {
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
-
-
+.iconsSocial {
+    gap: 30px;
+}
+.iconsSocial i {
+    font-size: 15px;
+}
+.iconsSocial a:hover i{
+    color: rgb(119, 197, 2);
+}
+.srbtn {
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.srbtn i{
+    margin-left: 5px;
+    transition: 0.2s ease;
+}
+.srbtn:hover {
+    color: rgb(119, 197, 2);
+}
+.srbtn:hover i {
+    transform: rotate(90deg);
+}
 
 
 
