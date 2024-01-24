@@ -69,10 +69,53 @@ header {
 .srbtn:hover i {
     transform: rotate(90deg);
 }
-
-
-
-img {
-    width: 120px;
-    height: 120px;
+.mainnav {
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    z-index: 9999;
+    transition: 0.5s ease-in-out;
+}
+.mainnav .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: space-between;
+}
+.logo {
+    gap: 5px;
+}
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+}
+.logo h1 {
+    font-size: 30px;
+    font-family: fantasy;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgb(35, 33, 42);
+    cursor: pointer;
+    transition: 0.2s ease;
+    letter-spacing: 2px;
+}
+.logo:hover h1 {
+    color: rgb(119, 197, 2);
+}
+.navList {
+    gap: 30px;
+    margin-right: 150px;
+    transition: 0.3s ease-in-out
+}
+.navList li a {
+    font-size: 14px;
+    font-weight: 600;
+}
+.navList li a:hover {
+    color: rgb(119, 197, 2);
 }
