@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
 * {
     margin: 0;
@@ -162,3 +162,94 @@ header {
 .searchInput i:hover {
     background-color: rgb(119, 197, 2);
 }
+
+
+
+.headerImg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    background: url(brownie.jpeg) no-repeat center/cover;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+.headerImg .container {
+    width: 100%;
+    height: 100%;
+}
+.headerImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+    transition: background-color .3s;
+}
+.headerInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    z-index: 9;
+    color: white;
+    padding-top: 8rem;
+    padding-bottom: 13rem;
+}
+.headerTitle {
+    font-size: 70px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+}
+.headerPera {
+    font-size: 17px;
+    padding-right: 35rem;
+    color: white;
+}
+.headerBtn {
+    --black: rgb(0, 0, 0);
+    --ch-black: rgb(20, 20, 20);
+    --ear-black: rgb(27, 27, 27);
+    --night-rider: rgb(46, 46, 46);
+    --white: rgb(255, 255, 255);
+    --af-white: rgb(243, 243, 243);
+    --ch-white: rgb(225, 225, 225);
+    border-radius: 8px;
+    width: 185px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 15px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    transition-duration: 0.2s;
+    background-color: rgb(119, 197, 2);
+}
+.headerBtn::before,
+.headerBtn::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,
+                var(--ch-black), var(--ch-black),
+                var(--night-rider), var(--ch-white),
+                var(--night-rider), var(--ear-black),
+                var(--ch-black), var(--ch-black));
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);  
+    z-index: -1; 
+    animation: steam 15s linear infinite;
+}
+
