@@ -322,6 +322,7 @@ header {
 .hederCards {
     width: 100%;
     gap: 30px;
+    padding: 2px;
     overflow-x: scroll;
     scroll-behavior: smooth;
     white-space: nowrap;
