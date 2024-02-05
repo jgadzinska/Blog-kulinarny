@@ -209,6 +209,13 @@ header {
     color: white;
 }
 .headerBtn {
+    --black: rgb(0, 0, 0);
+    --ch-black: rgb(20, 20, 20);
+    --ear-black: rgb(27, 27, 27);
+    --night-rider: rgb(46, 46, 46);
+    --white: rgb(255, 255, 255);
+    --af-white: rgb(243, 243, 243);
+    --ch-white: rgb(225, 225, 225);
     border-radius: 8px;
     width: 185px;
     height: 50px;
@@ -228,6 +235,11 @@ header {
 .headerBtn::before,
 .headerBtn::after {
     content: '';
+    background: linear-gradient(45deg,
+    var(--ch-black), var(--ch-black),
+    var(--night-rider), var(--ch-white),
+    var(--night-rider), var(--ear-black),
+    var(--ch-black), var(--ch-black));
     position: absolute;
     left: -2px;
     top: -2px;
@@ -237,6 +249,13 @@ header {
     height: calc(100% + 4px);  
     z-index: -1; 
     animation: steam 15s linear infinite;
+}
+.headerBtn::after {
+    filter: blur(50px);
+}
+.headerBtn:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 10px white;
 }
 
   /*BUTTON ANIMATION*/
@@ -257,60 +276,4 @@ header {
 .headerBtn:hover {
     border: 1px solid white;
     box-shadow: 0 0 10px white;
-}
-
-.headerSlider {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-top: -120px;
-    z-index: 99;
-    overflow: hidden;
-}
-
-.hederCards {
-    width: 100%;
-    gap: 30px;
-    padding: 2px;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    white-space: nowrap;
-    transition: transform 0.5s ease-in-out;
-}
-.hederCards::-webkit-scrollbar {
-    display: none;
-}
-.hederCard {
-    background: rgb(226, 225, 236);
-    min-width: 345px;
-    max-width: 345px;
-    padding: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-}
-.hederCard img {
-    width: 110px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.hederCard:hover {
-    box-shadow: 0 0 15px rgb(119, 197, 2);
-}
-.hederInfo {
-    margin-left: 10px;
-}
-.hederInfo {
-    margin-left: 10px;
-}
-.hederInfo span {
-    color: brown;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-.hederInfo h3 {
-    color: rgb(51, 51, 51);
-    font-family: 'Noto Sans', sans-serif;
-    margin-top: 8px;
 }
