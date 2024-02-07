@@ -404,3 +404,61 @@ header {
 .checked {
     color: rgb(72, 68, 68);
 }
+
+
+.categoriesCards {
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+.categCard {
+    position: relative;
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px grey;
+    padding: 20px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+.categImg {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;;
+}
+.categImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center ;
+    transition: 0.3s ease;
+}
+.categCard:hover img {
+    transform: scale(1.1);
+}
+.categInfo {
+    position: relative;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+}
+.categInfo span {
+   color: rgb(119, 197, 2);
+   font-size: 14px;
+   font-weight: 600;
+}
+.categInfo h3 {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+.categInfo p {
+    text-align: center;
+    font-size: 14px;
+}
+.categCard:hover {
+    box-shadow: 0 0 20px rgb(153, 153, 153);
+}
