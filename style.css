@@ -492,4 +492,115 @@ header {
     font-family: 'Merriweather', serif;
     font-size: 40px;
     color: rgb(29, 34, 40);
+    margin-top: 16px;
+}
+.popularCards {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 4rem;
+    gap: 22px;
+}
+.popCard {
+    position: relative;
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.popCardImg {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.popCardImg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: center;
+    object-position: center;
+    transition: 0.3s ease;
+}
+.popCard:hover .popCardImg img{
+    transform: scale(1.08);
+}
+.popThornName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: 15px;
+    border-top-right-radius: 10px
+}
+.popThornName img{
+    width: 40px;
+    margin-right: 10px;
+}
+.popTho h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+}
+.popTho p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.popCardImg i {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    background-color: #e8e5e5;
+    color: rgb(255, 103, 103);
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.popCardImg i:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+}
+.popCardInfo {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 0 0 20px;
+}
+
+.popCardInfo label {
+    font-size: 13px;
+}
+.popCardInfo h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+.popCardInfo p {
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+}
+.popCardBtn {
+    position: relative;
+    background-color: rgb(255, 103, 103);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+.popCardBtn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.165);
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.popCardBtn:hover::before {
+    transform: scale(1);
 }
