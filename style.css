@@ -1,74 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 body {
     width: 100%;
     height: auto;
-    background-color: white;
     font-family: 'Noto Sans', sans-serif;
+    background-color: white;
     transition: 0.4s ease;
     scroll-behavior: smooth;
-}
+} 
 .container {
     max-width: 1100px;
     margin: auto;
-}
+} 
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 li {
     list-style: none;
 }
+
 header {
     height: 100%;
     height: auto;
     z-index: 9999;
 }
+
 .topNav {
     width: 100%;
     height: 50px;
     background-color: rgb(29,34,40);
     color: white;
 }
+
 .flex {
     display: flex;
     align-items: center;
 }
+
 .topNav .container {
     justify-content: space-between;
     width: 100%;
     height: 100%;
 }
+
 .iconsSocial {
     gap: 30px;
 }
+
 .iconsSocial i {
     font-size: 15px;
 }
 .iconsSocial a:hover i{
     color: rgb(119, 197, 2);
 }
+
 .srBtn {
     font-size: 13px;
     font-weight: 600;
     transition: 0.2s ease;
 }
+
 .srBtn i{
     margin-left: 5px;
     transition: 0.2s ease;
 }
+
 .srBtn:hover {
     color: rgb(119, 197, 2);
 }
+
 .srBtn:hover i {
     transform: rotate(90deg);
 }
+
+/*NAVIGATION*/
+
 .mainNav {
     width: 100%;
     height: 90px;
@@ -78,7 +94,8 @@ header {
     box-shadow: 0 0 5px grey;
     z-index: 9999;
     transition: 0.5s ease-in-out;
-}
+} 
+
 .mainNav .container {
     position: relative;
     width: 100%;
@@ -86,46 +103,56 @@ header {
     background-color: transparent;
     justify-content: space-between;
 }
+
 .logo {
     gap: 5px;
 }
+
 .logo h1 {
     font-size: 30px;
     font-family: fantasy;
-    text-transform: uppercase;
     font-weight: 800;
-    color: rgb(35, 33, 42);
-    cursor: pointer;
-    transition: 0.2s ease;
     letter-spacing: 2px;
+    color: rgb(35, 33, 42);
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
 }
+
 .logo:hover h1 {
     color: rgb(119, 197, 2);
 }
+
 .navList {
     gap: 30px;
     margin-right: 150px;
     transition: 0.3s ease-in-out
 }
+
 .navList li a {
     font-size: 14px;
     font-weight: 600;
 }
+
 .navList li a:hover {
     color: rgb(119, 197, 2);
 }
+
 .searchBar {
     gap: 20px;
     margin-right: 15px;
 }
+
 .searchBar i {
     font-size: 23px;
     color: rgb(85, 85, 85);
     cursor: pointer;
 }
+
 .searcBar i:hover {
     color: rgb(119, 197, 2);
 }
+
 .searchInput {
     position: absolute;
     width: 100%;
@@ -135,6 +162,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 .searchInput input {
     width: 100%;
     height: 100%;
@@ -145,20 +173,22 @@ header {
     font-weight: 600;
     padding: 10px;
 }
+
 .searchInput i {
     font-size: 18px;
+    color: black;
     width: 25px;
     height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
-    color: black;
     box-shadow: 0 0 5px rgb(153, 153, 153);
     border-radius: 5px;
     margin-right: 2px;
     transition: 0.3s ease;
 }
+
 .searchInput i:hover {
     background-color: rgb(119, 197, 2);
 }
@@ -172,10 +202,12 @@ header {
     z-index: 1;
     transition: 0.3s ease;
 }
+
 .headerImg .container {
     width: 100%;
     height: 100%;
 }
+
 .headerImg::before {
     content: '';
     position: absolute;
@@ -188,6 +220,7 @@ header {
     z-index: -1;
     transition: background-color .3s;
 }
+
 .headerInfo {
     flex-direction: column;
     align-items: flex-start;
@@ -197,17 +230,20 @@ header {
     padding-top: 8rem;
     padding-bottom: 13rem;
 }
+
 .headerTitle {
     font-size: 70px;
     color: white;
     font-weight: 600;
     font-family: 'Merriweather', serif;
 }
+
 .headerPera {
     font-size: 17px;
     padding-right: 35rem;
     color: white;
 }
+
 .headerBtn {
     --black: rgb(0, 0, 0);
     --ch-black: rgb(20, 20, 20);
@@ -232,6 +268,7 @@ header {
     transition-duration: 0.2s;
     background-color: rgb(119, 197, 2);
 }
+
 .headerBtn::before,
 .headerBtn::after {
     content: '';
@@ -243,16 +280,18 @@ header {
     position: absolute;
     left: -2px;
     top: -2px;
-    border-radius: 10px;
-    background-size: 400%;
     width: calc(100% + 4px);
-    height: calc(100% + 4px);  
+    height: calc(100% + 4px); 
+    border-radius: 10px;
+    background-size: 400%; 
     z-index: -1; 
     animation: steam 15s linear infinite;
 }
+
 .headerBtn::after {
     filter: blur(50px);
 }
+
 .headerBtn:hover {
     border: 1px solid white;
     box-shadow: 0 0 10px white;
@@ -270,15 +309,17 @@ header {
         background-position: 0 0;
     }
 }
+
 .headerBtn::after {
     filter: blur(50px);
 }
+
 .headerBtn:hover {
     border: 1px solid white;
     box-shadow: 0 0 10px white;
 }
-
-
+ 
+   /* MY LATEST RECIPES */
 
 .threeCards {
     gap: 25px;
@@ -295,6 +336,7 @@ header {
     border-radius: 8px;
     padding: 20px;
 }
+
 .tCardImg {
     position: relative;
     width: 100%;
@@ -302,6 +344,7 @@ header {
     overflow: hidden;
     border-radius: 5px;
 }
+
 .tCardImg img {
     width: 100%;
     height: 100%;
@@ -309,9 +352,11 @@ header {
     border-radius: 5px;
     transition: 0.3s ease;
 }
+
 .tCard:hover .tCardImg img {
     transform: scale(1.1);
 }
+
 .tCardImg span {
     position: absolute;
     top: 2%;
@@ -320,9 +365,11 @@ header {
     background-color: white;
     border-radius: 5px;
 }
+
 .tCardImg span:hover {
     color: orange;
 }
+
 .tCardInfo {
     position: relative;
     margin-top: 10px;
@@ -330,11 +377,13 @@ header {
     gap: 15px;
     padding: 5px;
 }
+
 .tLabel {
     color: rgb(136, 1, 12);
     font-weight: 600;
     font-size: 13px;
 }
+
 .tCardInfo h2 {
     font-size: 20px;
     color: rgb(34, 34, 34);
@@ -342,50 +391,59 @@ header {
     text-transform: capitalize;
     font-family: 'Merriweather', serif;
 }
+
 .starRating {
     display: flex;
 }
+
 .bxs-star {
     color: orange;
 }
+
 .bx-heart:hover {
     color: rgb(209, 6, 6);
 }
+
 .tCardInfo p {
     font-size: 14px;
     line-height: 22px;
     color: rgb(68, 68, 68);
     text-align: center;
 }
+
 .tCardImg ul {
     gap: 12px;
 }
+
 .tCardInfo ul li {
     font-size: 12px;
     cursor: pointer;
     margin-left: 8px;
 }
+
 .tCardInfo ul li i {
     margin-right: 5px;
     color: rgb(136, 1, 12);
 }
+
 .tCardInfoul li:hover {
     color: rgb(136, 1, 12);
 }
 
 .tCardBtn {
     position: relative;
-    background-color: rgb(119, 197, 2);
     width: 100%;
     text-align: center;
     padding: 10px;
-    border-radius: 8px;
     color: white;
     font-weight: 600;
-    transition: 0.3s ease;
+    background-color: rgb(119, 197, 2);
+    border-radius: 8px;
     overflow: hidden;
     z-index: 1;
+    transition: 0.3s ease;
 }
+
 .tCardBtn::before {
     content: '';
     position: absolute;
@@ -398,13 +456,16 @@ header {
     transform: scale(0);
     transition: 0.3s ease-in-out;
 }
+
 .tCardBtn:hover::before {
     transform: scale();
 }
+
 .checked {
     color: rgb(72, 68, 68);
 }
 
+  /* CATEGORIES */
 
 .categoriesCards {
     margin-top: 6rem;
@@ -412,6 +473,7 @@ header {
     justify-content: center;
     gap: 32px;
 }
+
 .categCard {
     position: relative;
     width: 250px;
@@ -423,11 +485,13 @@ header {
     margin-top: 20px;
     transition: 0.3s ease;
 }
+
 .categImg {
     width: 100%;
     height: 170px;
     overflow: hidden;;
 }
+
 .categImg img {
     width: 100%;
     height: 100%;
@@ -435,9 +499,11 @@ header {
     background-position: center ;
     transition: 0.3s ease;
 }
+
 .categCard:hover img {
     transform: scale(1.1);
 }
+
 .categInfo {
     position: relative;
     margin-top: 10px;
@@ -445,6 +511,7 @@ header {
     gap: 15px;
     padding: 5px;
 }
+
 .categInfo span {
    color: rgb(119, 197, 2);
    font-size: 14px;
@@ -455,13 +522,17 @@ header {
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
+
 .categInfo p {
     text-align: center;
     font-size: 14px;
 }
+
 .categCard:hover {
     box-shadow: 0 0 20px rgb(153, 153, 153);
 }
+
+  /* POPULAR RECIPES */
 
 .popularRecipes {
     flex-direction: column;
@@ -470,10 +541,12 @@ header {
     padding: 0 20px;
     overflow: hidden;
 }
+
 .popularTitle {
     flex-direction: column;
     gap: 18px;
 }
+
 .line {
     position: relative;
     width: 100%;
@@ -481,6 +554,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 .line::before {
     content: '';
     width: 850px;
@@ -488,12 +562,14 @@ header {
     background-color: rgb(119, 197, 2);
     margin-right: 20px;
 }
+
 .popularTitle h1 {
     font-family: 'Merriweather', serif;
     font-size: 40px;
     color: rgb(29, 34, 40);
     margin-top: 16px;
 }
+
 .popularCards {
     width: 100%;
     height: auto;
@@ -501,6 +577,7 @@ header {
     margin-top: 4rem;
     gap: 22px;
 }
+
 .popCard {
     position: relative;
     width: 350px;
@@ -508,6 +585,7 @@ header {
     overflow: hidden;
     border-radius: 10px;
 }
+
 .popCardImg {
     position: relative;
     width: 100%;
@@ -515,6 +593,7 @@ header {
     overflow: hidden;
     border-radius: 10px;
 }
+
 .popCardImg img {
     display: block;
     width: 100%;
@@ -524,9 +603,11 @@ header {
     object-position: center;
     transition: 0.3s ease;
 }
+
 .popCard:hover .popCardImg img{
     transform: scale(1.08);
 }
+
 .popThornName {
     position: absolute;
     bottom: 0;
@@ -535,19 +616,23 @@ header {
     padding: 15px;
     border-top-right-radius: 10px
 }
+
 .popThornName img{
     width: 40px;
     margin-right: 10px;
 }
+
 .popTho h5 {
     font-family: 'Merriweather', serif;
     font-size: 15px;
     color: rgb(85, 85, 85);
 }
+
 .popTho p {
     font-size: 12px;
     margin-top: 5px;
 }
+
 .popCardImg i {
     position: absolute;
     top: 3%;
@@ -558,10 +643,12 @@ header {
     border-radius: 50px;
     cursor: pointer;
 }
+
 .popCardImg i:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(255, 0, 0);
 }
+
 .popCardInfo {
     position: relative;
     flex-direction: column;
@@ -573,14 +660,17 @@ header {
 .popCardInfo label {
     font-size: 13px;
 }
+
 .popCardInfo h2 {
     font-family: 'Merriweather', serif;
     font-size: 20px;
 }
+
 .popCardInfo p {
     font-size: 14px;
     color: rgb(119, 119, 119);
 }
+
 .popCardBtn {
     position: relative;
     background-color: rgb(255, 103, 103);
@@ -590,17 +680,19 @@ header {
     z-index: 1;
     transition: 0.3s ease-in-out;
 }
+
 .popCardBtn::before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(17, 17, 17, 0.165);
     z-index: -1;
     transition: 0.3s ease-in-out;
 }
+
 .popCardBtn:hover::before {
     transform: scale(1);
 }
