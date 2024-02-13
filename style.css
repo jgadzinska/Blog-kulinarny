@@ -696,3 +696,32 @@ header {
 .popCardBtn:hover::before {
     transform: scale(1);
 }
+
+
+/* FRUITS AND VEGETABLES */
+
+.vegeFruit {
+    position: relative;
+    background: url(owocWarzywo.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 45vh;
+    margin-top: 8rem;
+}
+
+.vegeFruit .container {
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vege, .fruit {
+    position: relative;
+    width: 48%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 28px;
+}
