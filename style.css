@@ -780,12 +780,12 @@ header {
     height: auto;
     margin-top: 8rem;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 6rem;
 }  
 
 .leftSect {
-    width: 55%;
+    width: 65%;
 }
 
 .leftBox {
@@ -818,4 +818,139 @@ header {
 
 .tCardInfo label {
     font-size: 25px;
+}
+
+.rightSect {
+    width: 33%;
+}
+
+.aboutSect {
+    width: 100%;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.aboutMe {
+    position: relative;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe::before {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: rgb(255, 103, 103);
+    background: linear-gradient(to right, transparent, rgb(255, 103, 103));
+    margin-right: 20px;
+}
+
+.aboutMe::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: rgb(255, 103, 103);
+    background: linear-gradient(to left, transparent, rgb(255, 103, 103));
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.aboutBox {
+    position: relative;
+    padding: 20px;
+    border: 1px solid rgb(221, 217, 217);
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+}
+
+.aboutBox p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgb(69, 67, 67);
+}
+
+ /*FALLOW ME*/
+
+.fallowMe {
+    width: 100%;
+}
+
+.fallowMe h3 {
+    margin-top: 150px;
+}
+
+.followCards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.socCard {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 18px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.socCard i {
+    color: white;
+}
+
+.socCard i:nth-last-child(2) {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.socCard:hover i:nth-last-child(2) {
+    transform: rotate(90deg)
+}
+
+.socCard h5 {
+    color: white;
+}
+
+.socCard:nth-child(1) {
+    background-color: rgb(59, 87, 157, 1);
+}
+
+.socCard:nth-child(2) {
+    background-color: rgb(225, 48, 90);
+}
+
+.socCard:nth-child(3) {
+    background-color: rgb(245, 9, 9);
+}
+
+.socCard:nth-child(4) {
+    background-color: rgb(44, 170, 225, 1);
+}
+
+.socCard:nth-child(5) {
+    background-color: rgb(27, 27, 27);
+}
+
+.socCard:nth-child(6) {
+    background-color: rgb(200, 35, 44);
 }
