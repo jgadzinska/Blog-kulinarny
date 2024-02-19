@@ -954,3 +954,79 @@ header {
 .socCard:nth-child(6) {
     background-color: rgb(200, 35, 44);
 }
+
+
+  /*SUBSCRIPTION*/
+
+.subscripMe {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(218, 217, 217);
+}
+
+.subscripMeInfo {
+    text-align: center;
+}
+
+.subscripMeInfo h1 {
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+.subscripMeInfo p {
+    font-size: 21px;
+    font-weight: 500;
+    color: rgb(57, 57, 57);
+    text-align: center;
+}
+
+.subscripMeInfo form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    margin: 35px 0 15px 0;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.subscripMeInfo form button {
+    position: relative;
+    padding: 12px 40px;
+    background-color: rgb(255, 103, 103);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.subscripMeInfo form button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.165);
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.subscripMeInfo form button:hover::before {
+    transform: scale(1);
+}
