@@ -20,3 +20,15 @@ searchOff.addEventListener('click', () => {
     }
 });
 
+
+  // STICKY
+
+const mainnav = document.querySelector('.mainNav');
+
+window.addEventListener('scroll', () => {
+    if(document.documentElement.scrollTop > 2){
+        mainnav.classList.add('sticky');
+    }else{
+        mainnav.classList.remove('sticky');
+    }
+});
