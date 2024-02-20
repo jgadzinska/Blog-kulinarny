@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
+
 body {
     width: 100%;
     height: auto;
@@ -15,6 +17,7 @@ body {
     transition: 0.4s ease;
     scroll-behavior: smooth;
 } 
+
 .container {
     max-width: 1100px;
     margin: auto;
@@ -60,6 +63,7 @@ header {
 .iconsSocial i {
     font-size: 15px;
 }
+
 .iconsSocial a:hover i{
     color: rgb(119, 197, 2);
 }
@@ -82,6 +86,7 @@ header {
 .srBtn:hover i {
     transform: rotate(90deg);
 }
+
 
 /*NAVIGATION*/
 
@@ -319,6 +324,7 @@ header {
     box-shadow: 0 0 10px white;
 }
  
+
    /* MY LATEST RECIPES */
 
 .threeCards {
@@ -465,6 +471,7 @@ header {
     color: rgb(72, 68, 68);
 }
 
+
   /* CATEGORIES */
 
 .categoriesCards {
@@ -531,6 +538,7 @@ header {
 .categCard:hover {
     box-shadow: 0 0 20px rgb(153, 153, 153);
 }
+
 
   /* POPULAR RECIPES */
 
@@ -710,7 +718,6 @@ header {
     padding: 28px;
 }
 
-
 .vegFruInfo h1 {
     font-size: 35px;
     font-family: 'Merriweather', serif;
@@ -878,6 +885,7 @@ header {
     color: rgb(69, 67, 67);
 }
 
+
  /*FALLOW ME*/
 
 .fallowMe {
@@ -1030,3 +1038,95 @@ input {
 .subscripMeInfo form button:hover::before {
     transform: scale(1);
 }
+
+
+  /*FOOTER*/
+
+footer {
+    width: 100%;
+    background-color: rgb(12, 18, 26);
+    color: white;
+    padding-bottom: 20px;
+}  
+
+.footer {
+    padding: 6rem 0;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footerInfo {
+    width: 36%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 5.4rem
+}
+
+.socialMedia {
+    display: flex;
+    gap: 20px;
+}
+
+.socialMedia i {
+    background-color: rgb(44, 40, 40);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.socialMedia i:hover {
+    background-color: rgb(119, 197, 2);
+}
+
+.footerNav {
+    width: 13%;
+    margin-right: 200px;
+}
+
+.footerNav:last-child {
+    margin-right: 0;
+}
+
+.footerInfo h1 {
+    font-family: cursive;
+    letter-spacing: 2px;
+}
+
+.footerInfo p {
+    font-size: 14px;
+    color: rgba(153, 152, 152, 0.6);
+}
+
+.footerNav h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.footerNav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footerNav ul li a {
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.footerNav ul li a:hover {
+    color: rgb(119, 197, 2);
+}
+
