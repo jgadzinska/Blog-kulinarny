@@ -214,6 +214,73 @@ header {
     background-color: rgb(119, 197, 2);
 }
 
+/* MENU BUTTON */
+
+.navOnOff {
+    display: none;
+}
+
+#checkbox1 {
+    display: none;
+}
+
+.toggle1{
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    height: calc(4px * 3 + 11px * 2);
+}
+
+.bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: calc(4px / 2);
+    background: black;
+    color: inherit;
+    opacity: 1;
+    transition: none 0.35s cubic-bezier(.5s, -0.35, .35, 1.5) 0s;
+}
+
+.bar--top {
+    bottom: calc(50% + 11px + 4px/ 2);
+    transition-property: bottom, transform;
+    transition-delay: calc(0s + 0.35s), 0s;
+}
+
+.bar--middle {
+    top: calc(50% - 4px/ 2);
+    transition-property: opacity;
+    transition-delay: calc(0s + 0.35s);
+}
+
+.bar--bottom {
+    top: calc(50% + 11px + 4px/ 2);
+    transition-property: top, transform;
+    transition-delay: calc(0s + 0.35s), 0s;
+}
+
+#checkbox1:checked + .toggle1 .bar--middle {
+    opacity: 0;
+    transition-duration: 0s;
+    transition-delay: calc(0s + 0.35s);
+}
+
+#checkbox1:checked + .toggle1 .bar--top {
+    bottom: calc(50% - 4px/ 2);
+    transform: rotate(135deg);
+    transition-delay: 0s, calc(0s + 0.35s);
+}
+
+#checkbox1:checked + .toggle1 .bar--bottom {
+    top: calc(50% - 4px/ 2);
+    transform: rotate(225deg);
+    transition-delay: 0s, calc(0s + 0.35s);
+}
+
 .headerImg {
     position: relative;
     width: 100%;
@@ -1154,12 +1221,13 @@ footer .container {
         position: absolute;
         width: 220px;
         height: 100vh;
-   
         top: 100%;
+        right: -150px;
         flex-direction: column;
         z-index: 999999;
         padding: 30px;
         background-color: rgb(234, 232, 232);
+        transition: 0.3s ease-in-out;
     }
     .navOnOff {
         display: block;
