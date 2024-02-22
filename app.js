@@ -32,3 +32,18 @@ window.addEventListener('scroll', () => {
         mainnav.classList.remove('sticky');
     }
 });
+
+
+
+
+const navonof = document.querySelector('.navOnOff');
+const navtoggle = document.querySelector('#checkbox1');
+const navlist = document.querySelector('.navList');
+
+navtoggle.addEventListener('change', () => {
+    if(navtoggle.checked) {
+        navlist.style.right = '-150px'
+    }else{
+        navlist.style.right = '-400px'
+    }
+})
