@@ -1216,20 +1216,167 @@ footer .container {
   @media screen and (max-width: 800px) {
     .topNav .container {
         padding: 0 20px;
-    }    
+    }  
+    
+    .occasionsRec {
+        width: 500px;
+        height: auto;
+        margin-top: 8rem;
+    }
+
     .navList {
         position: absolute;
-        width: 220px;
+        width: 250px;
         height: 100vh;
         top: 100%;
         right: -150px;
         flex-direction: column;
         z-index: 999999;
-        padding: 30px;
+        padding: 70px 5px;
         background-color: rgb(234, 232, 232);
         transition: 0.3s ease-in-out;
     }
+
+    .navList li a {
+        font-size: 24px;
+        font-family: 'Merriweather', serif;
+        font-weight: 600;
+    }
+
+    .logo h1 {
+        padding: 0 0 0 15px;
+    }
+
     .navOnOff {
         display: block;
+    }
+
+    .headerImg {
+        height: 45vh;
+        padding: 0 20px;
+    }
+
+    .headerInfo {
+        font-size: 30px;
+    }
+
+    .headerPera {
+        padding-right: 3rem;
+    }
+
+    .headerBtn {
+        font-size: 15px;
+    }
+
+    .threeCards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .popularCards {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .vegeFruit {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .vegeFruit .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .vege, .fruit {
+        width: 100%;
+    }
+
+    .occasionsRec {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .leftSect, .rightSect {
+        width: 100%;
+    }
+
+    .leftPosts .threeCard{
+        width: 100%;
+    }
+
+    .leftPosts .threeCard .tCardImg {
+        width: 100%;
+        height: 56%;
+    }
+
+    .rightSect {
+        margin-top: 3rem;
+    }
+
+    .footerNav {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .footerNav ul {
+        align-items: center;
+    }
+
+    .socialMedia i {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footerInfo h1,
+    .footerInfo p,
+    .socialMedia {
+        margin-left: 20px;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .categCard {
+        width: 180px;
+        height: auto;
+    }
+
+    .threeCard {
+        width: 100%;
+    }
+
+    .footerInfo {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subscripMeInfo h1 {
+        font-size: 37px;
+    }
+
+    .subscripMeInfo p {
+        font-size: 19px;
+    }
+
+    input {
+        width: 380px;
+    }
+
+    .footerNav {
+        width: 37%;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .footerNav ul {
+        align-items: center;
     }
   }
