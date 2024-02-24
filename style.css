@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
+
 body {
     width: 100%;
     height: auto;
@@ -15,6 +17,7 @@ body {
     transition: 0.4s ease;
     scroll-behavior: smooth;
 } 
+
 
  /*SCROLLBAR*/
 
@@ -40,6 +43,9 @@ a {
 li {
     list-style: none;
 }
+
+
+  /*NAVIGATION*/
 
 header {
     height: 100%;
@@ -72,6 +78,7 @@ header {
 .iconsSocial i {
     font-size: 15px;
 }
+
 .iconsSocial a:hover i{
     color: rgb(119, 197, 2);
 }
@@ -95,8 +102,6 @@ header {
     transform: rotate(90deg);
 }
 
-/*NAVIGATION*/
-
 .mainNav {
     width: 100%;
     height: 90px;
@@ -108,7 +113,9 @@ header {
     transition: 0.5s ease-in-out;
 } 
 
+
   /* STICKY*/
+
 .sticky {
     position: fixed;
     top: 0;
@@ -159,6 +166,9 @@ header {
     color: rgb(119, 197, 2);
 }
 
+
+  /* SEARCH */
+
 .searchBar {
     gap: 20px;
     margin-right: 15px;
@@ -178,21 +188,21 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     padding: 5px 0;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .searchInput input {
     width: 100%;
     height: 100%;
-    border: none;
-    outline: none;
-    border-radius: 10px;
     font-size: 15px;
     font-weight: 600;
     padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
 }
 
 .searchInput i {
@@ -214,6 +224,7 @@ header {
     background-color: rgb(119, 197, 2);
 }
 
+
 /* MENU BUTTON */
 
 .navOnOff {
@@ -227,10 +238,10 @@ header {
 .toggle1{
     position: relative;
     width: 40px;
-    cursor: pointer;
+    height: calc(4px * 3 + 11px * 2);
     margin: auto;
     display: block;
-    height: calc(4px * 3 + 11px * 2);
+    cursor: pointer;
 }
 
 .bar {
@@ -280,6 +291,9 @@ header {
     transform: rotate(225deg);
     transition-delay: 0s, calc(0s + 0.35s);
 }
+
+
+  /* HEADER */
 
 .headerImg {
     position: relative;
@@ -340,7 +354,7 @@ header {
     --white: rgb(255, 255, 255);
     --af-white: rgb(243, 243, 243);
     --ch-white: rgb(225, 225, 225);
-    border-radius: 8px;
+    position: relative;
     width: 185px;
     height: 50px;
     display: flex;
@@ -349,12 +363,12 @@ header {
     gap: 10px;
     padding: 0 15px;
     border: none;
+    border-radius: 8px;
     color: white;
-    position: relative;
-    cursor: pointer;
     font-weight: 700;
     transition-duration: 0.2s;
     background-color: rgb(119, 197, 2);
+    cursor: pointer;
 }
 
 .headerBtn::before,
@@ -419,9 +433,9 @@ header {
     position: relative;
     width: 350px;
     height: auto;
-    overflow: hidden;
     box-shadow: 0 0 10px rgba(153, 153, 153, 0.557);
     border-radius: 8px;
+    overflow: hidden;
     padding: 20px;
 }
 
@@ -494,8 +508,8 @@ header {
 
 .tCardInfo p {
     font-size: 14px;
-    line-height: 22px;
     color: rgb(68, 68, 68);
+    line-height: 22px;
     text-align: center;
 }
 
@@ -505,8 +519,8 @@ header {
 
 .tCardInfo ul li {
     font-size: 12px;
-    cursor: pointer;
     margin-left: 8px;
+    cursor: pointer;
 }
 
 .tCardInfo ul li i {
@@ -567,11 +581,11 @@ header {
     position: relative;
     width: 250px;
     height: auto;
+    padding: 20px;
+    margin-top: 20px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 10px grey;
-    padding: 20px;
-    margin-top: 20px;
     transition: 0.3s ease;
 }
 
@@ -596,16 +610,17 @@ header {
 .categInfo {
     position: relative;
     margin-top: 10px;
+    padding: 5px;
     flex-direction: column;
     gap: 15px;
-    padding: 5px;
 }
 
 .categInfo span {
    color: rgb(119, 197, 2);
    font-size: 14px;
    font-weight: 600;
-}
+} 
+
 .categInfo h3 {
     font-size: 20px;
     font-family: 'Merriweather', serif;
@@ -620,6 +635,7 @@ header {
 .categCard:hover {
     box-shadow: 0 0 20px rgb(153, 153, 153);
 }
+
 
   /* POPULAR RECIPES */
 
@@ -646,9 +662,9 @@ header {
 .popularCards {
     width: 100%;
     height: auto;
-    overflow: hidden;
     margin-top: 4rem;
     gap: 22px;
+    overflow: hidden;
 }
 
 .popCard {
@@ -671,8 +687,8 @@ header {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     background-size: center;
+    object-fit: cover;
     object-position: center;
     transition: 0.3s ease;
 }
@@ -685,8 +701,8 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: white;
     padding: 15px;
+    background-color: white;
     border-top-right-radius: 10px
 }
 
@@ -710,9 +726,9 @@ header {
     position: absolute;
     top: 3%;
     left: 3%;
-    background-color: #e8e5e5;
-    color: rgb(255, 103, 103);
     padding: 8px;
+    color: rgb(255, 103, 103);
+    background-color: #e8e5e5;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -746,8 +762,8 @@ header {
 
 .popCardBtn {
     position: relative;
-    background-color: rgb(255, 103, 103);
     padding: 10px 20px;
+    background-color: rgb(255, 103, 103);
     border-radius: 10px;
     color: rgb(255, 255, 255);
     z-index: 1;
@@ -771,7 +787,7 @@ header {
 }
 
 
-/* FRUITS AND VEGETABLES */
+/* FRUITS AND VEGETABLES CARDS */
 
 .vegeFruit {
     position: relative;
@@ -792,13 +808,12 @@ header {
     position: relative;
     width: 48%;
     height: 70%;
+    padding: 28px;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     flex-wrap: wrap;
-    padding: 28px;
 }
-
 
 .vegFruInfo h1 {
     font-size: 35px;
@@ -814,8 +829,8 @@ header {
     word-wrap: break-word;
     font-size: 14px;
     color: rgb(81, 81, 81);
-    line-height: 28px;
     margin-bottom: 15px;
+    line-height: 28px;
 }
 
 .vegFruInfo a {
@@ -873,6 +888,9 @@ header {
     margin-bottom: 6rem;
 }  
 
+
+  /* LEFT SECTION */
+
 .leftSect {
     width: 65%;
 }
@@ -893,9 +911,10 @@ header {
     gap: 20px;
     margin-bottom: 2.5rem;
 }
+
 .leftPosts .threeCard {
-    box-shadow: 0 0 10px #999;
     width: 345px;
+    box-shadow: 0 0 10px #999;
 }
 
 .leftPosts .threeCard .tCardInfo h2{
@@ -909,9 +928,15 @@ header {
     font-size: 25px;
 }
 
+
+  /* RIGHT SECTION */
+
 .rightSect {
     width: 33%;
 }
+
+
+  /* ABOUT ME */
 
 .aboutSect {
     width: 100%;
@@ -953,10 +978,10 @@ header {
 .aboutBox {
     position: relative;
     padding: 20px;
+    background-color: white;
     border: 1px solid rgb(221, 217, 217);
     border-radius: 20px;
     text-align: center;
-    background-color: white;
     z-index: 1;
 }
 
@@ -966,6 +991,7 @@ header {
     line-height: 28px;
     color: rgb(69, 67, 67);
 }
+
 
  /*FALLOW ME*/
 
@@ -985,11 +1011,11 @@ header {
 
 .socCard {
     width: 170px;
+    padding-top: 18px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    padding-top: 18px;
     box-shadow: 0 0 10px grey;
     border-radius: 10px;
     overflow: hidden;
@@ -1211,7 +1237,61 @@ footer .container {
 }
 
 
+
+
   /*RESPONSIVE*/
+
+  @media screen and (max-width: 1200px) {
+    .topNav, .container {
+        padding: 0 20px;
+    }
+
+    .leftPosts .threeCard {
+       width: 210px;
+    }
+
+    .socCard {
+        width: 150px;
+    }
+
+    .leftPosts {
+        padding-left: 23px;
+    }
+
+    .aboutSect {
+        padding-right: 23px;
+    }
+
+    .fallowMe {
+        padding-right: 23px;
+    }
+
+    .socCard {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .footerNav {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .footerNav ul {
+        align-items: center;
+    }
+
+    .socialMedia i {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footerInfo h1,
+    .footerInfo p,
+    .socialMedia {
+        margin-left: 20px;
+    }
+  }
+
 
   @media screen and (max-width: 800px) {
     .topNav .container {
@@ -1226,14 +1306,14 @@ footer .container {
 
     .navList {
         position: absolute;
-        width: 250px;
-        height: 100vh;
         top: 100%;
         right: -150px;
-        flex-direction: column;
-        z-index: 999999;
+        width: 250px;
+        height: 100vh;
         padding: 70px 5px;
+        flex-direction: column;
         background-color: rgb(234, 232, 232);
+        z-index: 999999;
         transition: 0.3s ease-in-out;
     }
 
