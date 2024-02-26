@@ -1,3 +1,6 @@
+
+// SEARCH
+
 const searchOn = document.querySelector('#searchOpen');
 const searchOff = document.querySelector('#removeSearch');
 const searchInput = document.querySelector('.searchInput');
@@ -21,6 +24,7 @@ searchOff.addEventListener('click', () => {
 });
 
 
+
   // STICKY
 
 const mainnav = document.querySelector('.mainNav');
@@ -35,6 +39,8 @@ window.addEventListener('scroll', () => {
 
 
 
+
+  //  MENU
 
 const navonof = document.querySelector('.navOnOff');
 const navtoggle = document.querySelector('#checkbox1');
