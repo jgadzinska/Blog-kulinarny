@@ -1459,4 +1459,7 @@ footer .container {
     .footerNav ul {
         align-items: center;
     }
+    .toggle1{
+        width: 25px;
+    }
   }
