@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog kulinarny</title>
+
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 
-
     <header>
 
-        
         <div class="topNav">
             <div class="container flex">
                 <div class="iconsSocial flex">
@@ -27,11 +27,11 @@
         </div>
 
 
-
         <!--NAVIGATION-->
 
         <div class="mainNav">
             <div class="container flex">
+
                 <div class="logo flex">
                     <h1>Cook Blog</h1>
                 </div>
@@ -41,13 +41,12 @@
                     <li><a href="#">Kategorie</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Przepisy</a></li>
-                    <li><a href="#">Okazja</a></li>
+                    <li><a href="#">Okazje</a></li>
                     <li><a href="#">Kontakt</a></li>
                 </ul>
 
                 <div class="searchBar flex">
                     <i class='bx bx-search' id="searchOpen"></i>
-
                     <div class="navOnOff">
                         <input type="checkbox" id="checkbox1">
                         <label for="checkbox1" class="toggle1">
@@ -56,7 +55,6 @@
                             <div class="bar bar--bottom"></div>
                         </label>
                     </div>
-
                 </div>
 
                 <div class="searchInput">
@@ -64,15 +62,18 @@
                     <i class='bx bx-x' id="removeSearch"></i>
                 </div>
 
-
             </div>
         </div>
+
     </header>
+
 
 
 
     <main>
 
+
+        <!-- SECTION HEADER -->
 
         <section class="headerImg">
             <div class="container">
@@ -89,10 +90,11 @@
 
 
 
-        <!--MY LATEST RECIPES-->
+        <!-- SECTION MY LATEST RECIPES -->
 
         <section class="threeCards container flex">
             <div class="tCard">
+
                 <div class="tCardImg">
                     <img src="salatkaGrecka.jpeg" alt="">
                     <span class="bx bxs-star"></span>
@@ -100,26 +102,29 @@
                 
                 <div class="tCardInfo flex">
                     <label class="tLabel">Sałatki</label>
-                    <h2>Sałatka grecka z chrupiacymi warzywami.</h2>
-                <div class="starRating">
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                </div>
-                <p>Sałatka grecka ze świeżych warzyw, wyrazistych w smaku czarnych oliwek i sera fety.
-                    Jest ona uważana za najlepszy kulinarny wynalazek greckiej kuchni.</p>
-                <ul class="flex">
-                    <li><i class='bx bx-time-five'></i>20 min</li>
-                    <li><i class='bx bx-heart'></i>Ulubione</li>
-                 </ul>
-                 <a href="#" class="tCardBtn">ZOBACZ PRZEPIS<i class='bx bx-right-arrow-alt'></i></a>
+                    <h2>Sałatka grecka z chrupiącymi warzywami.</h2>
+                        <div class="starRating">
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star"></span>
+                           <span class="bx bxs-star"></span>
+                        </div>
+                        <p>Sałatka grecka ze świeżych warzyw, wyrazistych w smaku czarnych oliwek i sera fety. 
+                            Jest ona uważana za najlepszy kulinarny wynalazek greckiej kuchni.</p>
+
+                        <ul class="flex">
+                            <li><i class='bx bx-time-five'></i>20 min</li>
+                            <li><i class='bx bx-heart'></i>Ulubione</li>
+                        </ul>
+
+                        <a href="#" class="tCardBtn">ZOBACZ PRZEPIS<i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
 
 
             <div class="tCard">
+
                 <div class="tCardImg">
                     <img src="zupaKrem.jpg" alt="">
                     <span><i class='bx bxs-star'></i></span>
@@ -128,24 +133,27 @@
                 <div class="tCardInfo flex">
                     <label class="tLabel">Zupy</label>
                     <h2>Zupa-krem z pieczonej dyni i marchewki.</h2>
-                <div class="starRating">
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star checked"></span>
-                </div>
-                <p> Zupa z dyni to kremowy i bogaty w smaku krem o pomarańczowym kolorze. Wyjatkowy aromat daje jej marchewka i pieczona dynia.</p>
-                <ul class="flex">
-                    <li><i class='bx bx-time-five'></i>60 min</li>
-                    <li><i class='bx bx-heart'></i>Ulubione</li>
-                 </ul>
-                 <a href="#" class="tCardBtn">ZOBACZ PRZEPIS<i class='bx bx-right-arrow-alt'></i></a>
+                        <div class="starRating">
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star checked"></span>
+                        </div>
+                        <p> Zupa z dyni to kremowy i bogaty w smaku krem o pomarańczowym kolorze. 
+                            Wyjatkowy aromat daje jej marchewka i pieczona dynia.</p>
+
+                        <ul class="flex">
+                            <li><i class='bx bx-time-five'></i>60 min</li>
+                            <li><i class='bx bx-heart'></i>Ulubione</li>
+                        </ul>
+                        <a href="#" class="tCardBtn">ZOBACZ PRZEPIS<i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
      
 
             <div class="tCard">
+
                 <div class="tCardImg">
                     <img src="paella.png" alt="">
                     <span><i class='bx bxs-star'></i></span>
@@ -153,21 +161,23 @@
                 
                 <div class="tCardInfo flex">
                     <label class="tLabel">Dania główne</label>
-                    <h2>Paella z ryże, warzywami i kurczakiem.</h2>
-                <div class="starRating">
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star"></span>
-                    <span class="bx bxs-star checked"></span>
-                    <span class="bx bxs-star checked"></span>
-                </div>
-                <p>Zanurz się w świecie hiszpańskich smaków z przepisem na tradycyjną paellę. 
-                    Z soczystym kurczakiem oraz aromatycznymi warzywami.</p>
-                <ul class="flex">
-                    <li><i class='bx bx-time-five'></i>90 min</li>
-                    <li><i class='bx bx-heart'></i>Ulubione</li>
-                 </ul>
-                 <a href="#" class="tCardBtn">ZOBACZ PRZEPIS<i class='bx bx-right-arrow-alt'></i></a>
+                    <h2>Paella z ryżem, warzywami i kurczakiem.</h2>
+                        <div class="starRating">
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star"></span>
+                            <span class="bx bxs-star checked"></span>
+                            <span class="bx bxs-star checked"></span>
+                        </div>
+                        <p>Zanurz się w świecie hiszpańskich smaków z przepisem na tradycyjną paellę. 
+                        Z soczystym kurczakiem oraz aromatycznymi warzywami.</p>
+
+                        <ul class="flex">
+                            <li><i class='bx bx-time-five'></i>90 min</li>
+                            <li><i class='bx bx-heart'></i>Ulubione</li>
+                        </ul>
+
+                        <a href="#" class="tCardBtn">ZOBACZ PRZEPIS<i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
             
@@ -175,7 +185,7 @@
 
 
         
-        <!--CATEGORIES-->
+        <!--SECTION CATEGORIES-->
 
         <section class="categoriesCards container flex">
 
@@ -185,7 +195,7 @@
                 </div>
 
                 <div class="categInfo flex">
-                    <span>62 przepisów</span>
+                    <span>65 przepisów</span>
                     <h3>Śniadania</h3>
                 </div>
             </a>
@@ -207,7 +217,7 @@
                 </div>
 
                 <div class="categInfo flex">
-                    <span>74 przepisów</span>
+                    <span>78 przepisów</span>
                     <h3>Kolacje</h3>
                 </div>
             </a>
@@ -229,8 +239,8 @@
                 </div>
 
                 <div class="categInfo flex">
-                    <span>103 przepisó</span>
-                    <h3>Słodkości</h3>
+                    <span>106 przepisów</span>
+                    <h3>Desery</h3>
                 </div>
             </a>
 
@@ -251,7 +261,7 @@
                 </div>
 
                 <div class="categInfo flex">
-                    <span>53 przepisów</span>
+                    <span>56 przepisów</span>
                     <h3>Pieczywo</h3>
                 </div>
             </a>
@@ -271,7 +281,7 @@
 
 
 
-        <!--POPULAR RECIPES-->
+        <!--SECTION POPULAR RECIPES-->
 
         <div class="popularRecipes container flex">
 
@@ -313,6 +323,7 @@
 
                 </div>
 
+
                 <div class="popCard">
 
                     <div class="popCardImg">
@@ -321,7 +332,7 @@
                             <img src="user.jpg" alt="">
                             <div class="popTho">
                                 <h5>Makaron</h5>
-                                <p>192 Polubienia</p>
+                                <p>172 Polubienia</p>
                             </div>
                         </div>
                         <i class='bx bx-heart'></i>
@@ -368,10 +379,10 @@
                             <span class="bx bxs-star"></span>
                             <span class="bx bxs-star"></span>
                         </div>
-                        <label>Słodkości</label>
+                        <label>Desery</label>
                         <h2>Tort Czekoladowy</h2>
                         <p>Kremowy, aromatyczny i niezwykle intensywnie czekoladowy tort,
-                             który uda się w każdej kuchni.</p>
+                            który uda się w każdej kuchni.</p>
 
                         <a href="#" class="popCardBtn">ZOBACZ PRZEPIS
                             <i class='bx bx-right-arrow-alt'></i>
@@ -386,9 +397,10 @@
 
 
 
-       <!--FRUITS AND VEGETABLES-->
+       <!--SECTION FRUITS AND VEGETABLES-->
 
        <section class="vegeFruit">
+
             <div class="container flex">
 
                 <div class="vege flex">
@@ -410,13 +422,17 @@
                 </div>
 
             </div>
+
        </section>
 
 
 
-       <!-- RECIPES OCCASIONS -->
+       <!--SECTION RECIPES OCCASIONS -->
 
        <section class="occasionsRec container flex">
+
+            <!-- LEFT -->
+
             <div class="leftSect">
                 <div class="leftBox">
                     <h1>Przepisy okazyjne</h1>
@@ -446,7 +462,7 @@
                         <div class="tCardInfo flex">
                             <label class="tLabel">Wigilia</label>
                             <h2>Pierogi z kapustą i grzybami</h2>
-                            <p>Pierogi to  jedno z najbardziej tradycyjnych dań na Wigilię.
+                            <p>Pierogi to jedno z najbardziej tradycyjnych dań na Wigilię.
                             Delikatne ciasto oraz pyszny farsz z kapusty kiszonej i suszonych grzybów </p>
                             <a href="#" class="tCardBtn">ZOBACZ WIĘCEJ PRZEPISÓW<i class='bx bx-right-arrow-alt'></i></a>
                         </div>      
@@ -475,7 +491,7 @@
                             <label class="tLabel">Wielkanoc</label>
                             <h2>Babka cytrynowa</h2>
                             <p>Wielkanoc bez najlepszej babki cytrynowej jest niepełna. 
-                            To tradycyjne wilgotne ciasto posypane cukrem pudrem i płatkami migdałowymi.</p>
+                            To tradycyjne wilgotne ciasto polane lukrem lub posypane cukrem pudrem.</p>
                             <a href="#" class="tCardBtn">ZOBACZ WIĘCEJ PRZEPISÓW<i class='bx bx-right-arrow-alt'></i></a>
                         </div>      
                     </div>
@@ -483,6 +499,8 @@
                 </div>
             </div>
 
+
+            <!-- RIGHT -->
 
             <div class="rightSect ">
 
@@ -492,7 +510,7 @@
                         <p>Miło mi gościć Cię na moim blogu, który powstał z zamiłowania do gotowania i pieczenia. 
                             Znajdziesz tu przepisy na klasyczne oraz nowoczesne dania i wypieki, przydatne porady kulinarne i inspiracje. 
                             Wszystkie zdjęcia i teksty są mojego autorstwa,
-                             a każda potrawa została sprawdzona przeze mnie oraz moją rodzinę lub przyjaciół.</p>
+                            a każda potrawa została sprawdzona przeze mnie oraz moją rodzinę lub przyjaciół.</p>
                     </div>
                 </div>
 
@@ -541,7 +559,7 @@
 
 
 
-       <!--SUBSCRIPTION-->
+       <!-- SECTION SUBSCRIPTION-->
 
        <section class="subscripMe">
 
@@ -560,7 +578,7 @@
 
 
 
-    <!--FOOTER-->
+    <!-- SECTION FOOTER-->
 
     <footer>
         <div class="container flex">
