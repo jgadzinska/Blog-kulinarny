@@ -1,3 +1,5 @@
+Demo: https://jgadzinska.github.io/Blog-kulinarny/
+
 Technologie: HTML, CSS, JavaScript.
 
 Responsywna strona internetowa bloga kulinarnego. 
