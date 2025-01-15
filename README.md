@@ -4,8 +4,13 @@ Technologie: HTML, CSS, JavaScript.
 
 Stona internetowa bloga kulinarnego.
 
-Projekt zawiera: navigację, search do wpisania co chcemy wyszukać, header z animacja przycisku. 
-Dalej ujrzymy pozycjonowane sekcje dotyczące przepisów wraz z 'transition'. Sekcja 'obserwuj mnie' zawiera ikonki, które po najechaniu na nie następuje 'transform'.
-Następnie mamy zakładkę z subskrypcją co powoduję zapisanie się na newsletter.
-Na końcu strony znajduje się stopka. 
-Strona jest responsywna.
+funkcje:
+- nawigacja - główne menu nawigacyjne z odnośnikami do najważniejszych sekcji
+- search - funkcja wyszukiwania umożliwia szybko znalezienie przepisów
+- galerie zdjęć z opisami
+- kategorię dzięki, którym można łatwo znaleźć interesujacą dla nas potrawę
+- media społecznościowe
+- zapisanie się na newsletter, aby otrzymać nowe przepisy na mail
+- stopka strony, gdzie znajdziemy informację o mediach społecznościowych, dodatkowe menu, prawa autorskie
+- wykorzystanie position, transition, transform
+- responsywny design (RWD)
