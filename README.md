@@ -4,7 +4,7 @@ Technologie: HTML, CSS, JavaScript.
 
 Stona internetowa bloga kulinarnego.
 
-funkcje:
+Funkcje:
 - nawigacja - główne menu nawigacyjne z odnośnikami do najważniejszych sekcji
 - search - funkcja wyszukiwania umożliwia szybko znalezienie przepisów
 - galerie zdjęć z opisami
